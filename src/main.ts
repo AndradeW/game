@@ -31,9 +31,10 @@ const cpuChoice1 = document.getElementById("cpuChoice") as HTMLElement;
 // --- Función para manejar la jugada ---
 function handleChoice(player: Option) {
 
+    playerChoice.innerHTML = player;
+
     const cpu = cpuChoice();
 
-    playerChoice.innerHTML = player;
     cpuChoice1.innerHTML = cpu;
 
     const winner = getWinner(player, cpu);

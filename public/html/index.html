@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Piedra · Papel · Tijera · Lagarto · Spock</title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script type="module" src="../js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="app" id="app">
+        <header>
+            <h1>Piedra · Papel · Tijera · Lagarto · Spock</h1>
+        </header>
+
+        <main class="board">
+            <section class="panel">
+                <div class="inner">
+                    <div class="score" id="score">
+                        <div class="card w">
+                            <span class="label">Ganados</span>
+                            <h3 id="wins">0</h3>
+                        </div>
+                        <div class="card l">
+                            <span class="label">Perdidos</span>
+                            <h3 id="losses">0</h3>
+                        </div>
+                        <div class="card d">
+                            <span class="label">Empates</span>
+                            <h3 id="draws">0</h3>
+                        </div>
+                    </div>
+
+                    <div class="choices">
+                        <button id="btn-piedra" class="btn">🪨 Piedra</button>
+                        <button id="btn-papel" class="btn">📄 Papel</button>
+                        <button id="btn-tijera" class="btn">✂️ Tijera</button>
+                        <button id="btn-lagarto" class="btn">🦎 Lagarto</button>
+                        <button id="btn-spock" class="btn">🖖 Spock</button>
+                        <div class="result">
+                            <div class="vs">
+                                <div class="pill" id="playerChoice">?</div>
+                                <div>VS</div>
+                                <div class="pill" id="cpuChoice">?</div>
+                            </div>
+                            <div class="outcome" id="outcome">Elige una opción</div>
+                        </div>
+
+                        <div class="actions">
+                            <button class="btn" id="reset">Reiniciar</button>
+                        </div>
+                    </div>
+            </section>
+
+
+        </main>
+
+    </div>
+</body>
+
+</html>

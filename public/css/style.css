@@ -1,0 +1,149 @@
+/* ==== Estilos Generales ==== */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #ffeb3b;
+}
+
+/* ==== Panel y Score ==== */
+.panel .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 90px;
+}
+
+.card.w {
+  border: 2px solid #4caf50;
+}
+
+.card.l {
+  border: 2px solid #f44336;
+}
+
+.card.d {
+  border: 2px solid #ff9800;
+}
+
+.card h3 {
+  margin: 0.5rem 0 0 0;
+  font-size: 1.5rem;
+}
+
+/* ==== Opciones ==== */
+.choices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap; /* Permite que se acomoden en móviles */
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  background: #ffffff;
+  color: #2a5298;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  min-width: 120px;
+}
+
+.btn:hover {
+  background: #ffeb3b;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* ==== Resultados ==== */
+.result {
+  text-align: center;
+}
+
+.vs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.pill {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.8rem 1.2rem;
+  border-radius: 50px;
+  min-width: 80px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.outcome {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* ==== Acciones ==== */
+.actions {
+  margin-top: 1rem;
+}
+
+.actions .btn {
+  background: #f44336;
+  color: #fff;
+}
+
+.actions .btn:hover {
+  background: #d32f2f;
+}
